@@ -30,7 +30,7 @@ configure_file(
   install_dir: get_option('bindir')
 )
 
-gjspack = find_program('gjspack')
+gjspack = find_program('../troll/gjspack/bin/gjspack')
 custom_target('gjspack',
   input: ['main.js'],
   output: app_id + '.src.gresource',
